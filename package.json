@@ -1,0 +1,41 @@
+{
+  "name": "grunt-trifle",
+  "description": "A task runner for creating screenshots using TrifleJs.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/mrClapham/grunt-triflejs",
+  "author": {
+    "name": "Graham Clapham",
+    "email": "info\"gcdesign.co.uk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrClapham/grunt-triflejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrClapham/grunt-triflejs/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/mrClapham/grunt-triflejs/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt": "~0.4.5"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
