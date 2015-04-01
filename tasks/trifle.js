@@ -30,20 +30,28 @@ module.exports = function(grunt) {
       separator: ', '
     });
 
-
     var runnerPath = path.resolve(cwd+"/runners/triflerunner.js");
-    console.log('runnerPath ',runnerPath);
+
+    var _args = [
+                  runnerPath,
+                  "http://windows.microsoft.com/en-GB/internet-explorer/which-version-am-i-using",
+                  "vo2",
+                  [1280, 900],
+                  "IE7"];
+
+    // Spawn a function to call the triflerunner.js task
     grunt.util.spawn({
         cmd: path.resolve(cwd+"/trifle/TrifleJS.exe"),
-        args: [
-          runnerPath
-        ],
+        args: _args,
         opts: {
+          emulate:'IE7'
         }
       },
       function(error, result, code) {
           // When Phantom exits check for remaining messages one last time
           console.log(" EXIT FUNCTION ");
+          //console.log(" EXIT FUNCTION ",error, result, code);
+
       }
       );
 
